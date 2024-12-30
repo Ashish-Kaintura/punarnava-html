@@ -1,0 +1,19 @@
+ <script>
+      // Tailwind Configuration (if needed)
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans Display"', "sans-serif"],
+              raleway: ['"Raleway"', "sans-serif"],
+              cinzel: ['"Cinzel Decorative"', "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />

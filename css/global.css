@@ -1,0 +1,77 @@
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* src/styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    @apply font-sans;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    /* background: #0d0c0c; */
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    z-index: 20;
+}
+
+.sidenav ul {
+    padding-top: 60px;
+}
+
+.sidenav ul li {
+    margin: 20px 0;
+}
+
+.sidenav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #be9343;
+}
+
+.open {
+    width: 30%;
+}
+
+@media screen and (max-width: 576px) {
+    .open {
+        width: 60%;
+    }
+}
+
+/* swiper */
+
+.swiper {
+    margin: 20px auto;
+    padding: 20px;
+    /* Adjust this based on your design preference */
+}
+
+/* Adjusting slider for small screens */
+@media (max-width: 576px) {
+    .swiper {
+        height: auto;
+        /* Smaller height for mobile */
+    }
+}
+
+/* Styles for custom navigation buttons */
+.custom-prev-button,
+.custom-next-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

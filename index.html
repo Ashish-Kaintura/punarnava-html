@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      // Tailwind Configuration (if needed)
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans Display"', "sans-serif"],
+              raleway: ['"Raleway"', "sans-serif"],
+              cinzel: ['"Cinzel Decorative"', "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Cinzel+Decorative:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper Styles -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="fixed w-full z-10 transition-all duration-300 bg-[#0D0C0C] backdrop-blur-[1.4495413303375244px] bg-opacity-40"
+    >
+      <div class="px-4 sm:py-4 py-1 flex justify-between items-center">
+        <div class="flex justify-start items-center lg:ps-8 ps-1">
+          <div>
+            <a href="/">
+              <img
+                src="/images/Logo/punarnava white.webp"
+                alt="Logo"
+                class=""
+                width="60"
+                height="40"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="/">
+              <img
+                src="/images/Logo/punarnava white text1.webp"
+                alt="Text Logo"
+                class=""
+                width="150"
+                height="60"
+              />
+            </a>
+          </div>
+        </div>
+        <ul
+          id="desktop-menu"
+          class="lg:flex hidden font-sans font-light tracking-wide items-center gap-x-4 text-[19px] uppercase text-white"
+        >
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/destination-wedding">Destination Wedding</a></li>
+          <li><a href="/Room-suites">Room & Suites</a></li>
+          <li><a href="/contact-us">Contact Us</a></li>
+          <li><a href="https://www.swiftbook.io/inst/#home">Book Now</a></li>
+        </ul>
+        <a href="tel:+917217011476" class="hidden xl:block">
+          <button
+            class="px-4 py-2 bg-white rounded-sm text-black shadow-lg hidden xl:block cursor-pointer relative"
+          >
+            <span
+              class="absolute inset-0 rounded-full bg-[#be9343] opacity-90 border-blue-50 animate-ping"
+            ></span>
+            Call Now
+          </button>
+        </a>
+        <button id="menu-toggle" class="cursor-pointer text-white">
+          <i id="menu-icon" class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div id="sidenav" class="sidenav h-full block z-20">
+      <div
+        class="block justify-center h-full bg-[#0D0C0C] backdrop-blur-[1.4495413303375244px] bg-opacity-40"
+      >
+        <div class="flex justify-end pt-10 pr-4">
+          <button id="close-sidenav" class="cursor-pointer text-white">
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+
+        <ul class="pt-2 text-start ps-12">
+          <li>
+            <a
+              href="/"
+              class="font-sans mt-2 text-white text-xl font-thin hover:text-[#be9343]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/about-us"
+              class="font-sans mt-2 text-white text-xl font-thin hover:text-[#be9343]"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="/destination-wedding"
+              class="font-sans mt-2 text-white text-xl font-thin hover:text-[#be9343]"
+              >Destination Wedding</a
+            >
+          </li>
+          <li>
+            <a
+              href="/Room-suites"
+              class="font-sans mt-2 text-white text-xl font-thin hover:text-[#be9343]"
+              >Room & Suites</a
+            >
+          </li>
+          <li>
+            <a
+              href="/contact-us"
+              class="font-sans mt-2 text-white text-xl font-thin hover:text-[#be9343]"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="/gallery"
+              class="font-sans mt-2 text-white text-xl font-thin hover:text-[#be9343]"
+              >Gallery</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+      <source src="/videos/Home Page Video.mp4" type="video/mp4" />
+      <track
+        src="/videos/Home Page Video.mp4"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+      />
+    </video>
+    <div id="quickbook-widget" class="pt-8"></div>
+
+    <script
+      src="https://www.swiftbook.io/plugin/js/booking-service.min.js"
+      id="propInfo"
+      propertyid="423MTkBCCnHDj92hDroqmMfZLfi2Mzc="
+      cal-rendererId="quickbook-widget"
+      JDRN="Y"
+      strategy="lazyOnload"
+    ></script>
+
+    <section>
+      <div>
+        <div
+          class="w-full justify-center gap-x-10 sm:flex block items-center py-16 sm:px-0 px-4"
+        >
+          <!-- Mobile view image -->
+          <div
+            class="sm:hidden flex justify-center sm:w-[540px] sm:h-[450px] h-[450px]"
+          >
+            <img
+              class="overflow-hidden w-full h-full object-cover z-0 brightness-125"
+              src="images/home/homeabout.webp"
+              alt="punarnava hotel"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <br />
+          <!-- Text content -->
+          <div>
+            <h1 class="text-3xl text-[#be9343] font-serif">
+              Welcome To Punarnava
+            </h1>
+            <br />
+            <p class="sm:w-[500px] font-sans">
+              Experience unparalleled luxury and serenity at Punarnava Resort &
+              Spa, India’s premier destination for relaxation, rejuvenation, and
+              reconnection with nature. Punarnava is regarded as one of the best
+              five-star resorts in Dehradun. Nestled in the Himalayas and
+              surrounded by dense forests in the Mussoorie Hills, Punarnava
+              Resort & Spa is conveniently located just 10 kilometers from both
+              Dehradun and Mussoorie. This is your perfect getaway from the
+              hustle of modern life, harmoniously integrated with the land of
+              Shiva.
+              <br />
+              <br />
+              The concept of Punarnava embodies peace and prosperity and is
+              deeply rooted in ancient Indian traditions and philosophies,
+              particularly in Ayurveda and spiritual contexts. The term
+              Punarnava, derived from Sanskrit, translates to "renewal" or
+              "regeneration." It comes from "punar," meaning "again," and
+              "nava," meaning "new" or "fresh." In Ayurveda, Punarnava also
+              refers to a medicinal herb found in the region, known for its
+              rejuvenating and detoxifying properties.
+              <br />
+              Let the symphony of nature’s sounds, the warmth of golden light,
+              and the gentle rustle of leaves transport you to deep relaxation.
+              Here, in this sacred space, you can Awaken your spirit to the
+              whispers of the forest, Rekindle your connection to the earth's
+              primal heartbeat, and Surrender to the opulence of a luxury that
+              nurtures body and soul. In this pyramid sanctuary, time stands
+              still, and the boundaries between self and nature dissolve,
+              leaving only the essence of peace and unity.
+            </p>
+            <br />
+            <p class="sm:w-[450px] font-sans">
+              Village – Bhitarli, Kimadi, Lambidhar – Mussoorie Road, Dehradun,
+              Uttarakhand, India
+            </p>
+          </div>
+          <!-- Desktop view image -->
+          <div class="sm:flex hidden justify-center w-[520px] h-[420px]">
+            <img
+              class="overflow-hidden w-full h-full object-cover brightness-125 contrast-100"
+              alt="punarnava hotel"
+              style="width: 100%; height: auto"
+              src="images/home/homeabout.webp"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex justify-center">
+        <a href="tel:+ 917217011476">
+          <button
+            class="py-2 px-6 bg-[#be9343] text-white rounded-md hover:bg-[#d5a54b] focus:outline-none focus:ring-2 focus:ring-blue-500 relative"
+          >
+            <span
+              class="absolute inset-0 rounded-full bg-[#be9343] opacity-90 border-blue-50 animate-ping"
+            ></span>
+            Call US
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto">
+        <div class="py-10">
+          <div>
+            <h2
+              class="text-center text-3xl font-serif uppercase text-[#be9343] py-8 tracking-widest"
+            >
+              Destination Wedding & Events
+            </h2>
+          </div>
+          <div class="justify-center items-center flex-col">
+            <!-- Desktop view (sm:flex) -->
+            <div
+              class="sm:flex hidden justify-evenly items-center overflow-hidden gap-x-5"
+            >
+              <div class="w-[450px] h-[400px] overflow-hidden">
+                <img
+                  class="slider-image w-full h-full object-cover"
+                  src="images/home/destination-wedding-2.webp"
+                  alt="Destination-wedding"
+                />
+              </div>
+              <div class="w-[450px] h-[400px] overflow-hidden">
+                <img
+                  class="slider-image w-full h-full object-cover"
+                  src="/images/home/destination-wedding-4.webp"
+                  alt="Destination-wedding"
+                />
+              </div>
+              <div class="w-[450px] h-[400px] overflow-hidden">
+                <img
+                  class="slider-image w-full h-full object-cover"
+                  src="/images/home/destination-wedding-1.jpg"
+                  alt="Destination-wedding"
+                />
+              </div>
+              <div class="w-[450px] h-[400px] overflow-hidden">
+                <img
+                  class="slider-image w-full h-full object-cover"
+                  src="/images/home/destination-wedding-5.webp"
+                  alt="Destination-wedding"
+                />
+              </div>
+              <div class="w-[450px] h-[400px] overflow-hidden">
+                <img
+                  class="slider-image w-full h-full object-cover"
+                  src="/images/home/destination-wedding-6_1.webp"
+                  alt="Destination-wedding"
+                />
+              </div>
+            </div>
+
+            <!-- Mobile view (sm:hidden) -->
+            <div
+              class="sm:hidden flex justify-evenly items-center overflow-hidden p-4"
+            >
+              <div class="w-[450px] h-[400px] overflow-hidden">
+                <img
+                  class="slider-image w-full h-full object-cover"
+                  src="/image/home/destination-wedding-6_1"
+                  alt="Destination-wedding"
+                />
+              </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="mt-4 flex justify-end px-12 gap-x-8">
+              <button
+                id="prev-button"
+                class="bg-[#ad8c4e] hover:bg-amber-800 text-white font-bold py-2 px-4 rounded-l"
+              >
+                <span class="size-7">&lt;</span>
+              </button>
+              <button
+                id="next-button"
+                class="bg-[#ad8c4e] hover:bg-amber-800 text-white font-bold py-2 px-4 rounded-r"
+              >
+                <span class="size-7">&gt;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex justify-center py-12">
+        <a href="tel:+ 917217011476">
+          <button
+            class="py-2 px-6 bg-[#be9343] text-white rounded-md hover:bg-[#d5a54b] focus:outline-none focus:ring-2 focus:ring-blue-500 relative"
+          >
+            <span
+              class="absolute inset-0 rounded-full bg-[#be9343] opacity-90 border-blue-50 animate-ping"
+            ></span>
+            Book Your wedding
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section
+      class="sm:flex sm:justify-between justify-center p-8 sm:px-20 sm:py-12 items-center gap-x-8 bg-fixed bg-center bg-no-repeat"
+      style="
+        background-image: url('/Images/download.png');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div>
+        <h2 class="text-3xl font-serif tracking-widest uppercase text-black">
+          Celebrity At Punarnava
+        </h2>
+        <br />
+        <p class="font-sans text-xm sm:w-[450px]">
+          Punarnava is a blessed property nestled in the lap of the Himalayas.
+          The journey Punarnava has taken over the last three years has been
+          splendid. Punarnava hosted an ample number of social parties and
+          events. The guests were blown away as they were treated with honor and
+          respect at Punarnava.
+          <br />
+          <br />
+          Punarnava’s luxurious retreat, amidst breathtaking mountains, has
+          played host to India’s most celebrated celebrities, who seek refuge in
+          its exclusive ambiance. Bask in the same splendid views and indulgent
+          atmosphere that have enchanted the stars and left them yearning to
+          return. At Punarnava, the boundaries between reality and celebrity
+          blur, inviting you to live like a star in a world of unbridled luxury
+          and natural beauty.
+        </p>
+      </div>
+      <div class="sm:pt-0 pt-8 sm:flex block gap-x-2">
+        <div class="sm:w-96 sm:h-96 overflow-hidden">
+          <img
+            alt="punarnava celebrity visit"
+            class="w-full h-full object-cover"
+            src="/images/celebrity/big-image4.webp"
+          />
+        </div>
+        <div class="sm:w-96 sm:h-96 sm:mt-0 mt-2 overflow-hidden">
+          <img
+            alt="punarnava celebrity visit"
+            class="w-full h-full object-cover"
+            src="/images/celebrity/big-image5.webp"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="justify-center py-12">
+        <div
+          class="sm:flex block sm:justify-between justify-center items-center sm:px-20 px-4"
+        >
+          <div>
+            <h2
+              class="text-3xl font-extralight font-serif uppercase tracking-widest text-[#be9343]"
+            >
+              ROOMS & SUITES
+            </h2>
+            <br />
+            <p class="sm:w-[450px] font-sans text-sm">
+              Punarnava believes in providing the best accommodation experience
+              to its guests. Punarnava is covered densely by forests on all
+              sides. Punarnava offers luxury villas and cottages with private
+              pools and landscaped gardens. Rooms of various types are
+              strategically located all across the resort&apos;s landscape.
+              Standard rooms with private balconies or elevated mountain vistas
+              provide cozy havens of peace and comfort. All these facilities
+              reflect the comprehensive theme of harmoniously blending five-star
+              amenities with nature.
+            </p>
+            <div class="gap-x-12 flex mt-8 pt-4">
+              <button
+                id="roomsButton"
+                class="font-raleway text-[#be9343] cursor-pointer uppercase text-sm"
+              >
+                Rooms
+              </button>
+              <button
+                id="suitesButton"
+                class="font-raleway text-[#be9343] cursor-pointer uppercase text-sm"
+              >
+                Suites
+              </button>
+            </div>
+          </div>
+          <div>
+            <button
+              class="px-4 py-2 sm:mt-0 mt-4 border-[#be9343] text-[#be9343] hover:bg-[#be9343] hover:text-white border-2 rounded-sm text-sm font-raleway tracking-widest shadow-xl cursor-pointer"
+            >
+              <a href="/Room-suites"> All Room & Suites </a>
+            </button>
+          </div>
+        </div>
+        <!-- Conditional rendering based on activeSection state (simulated with JS below) -->
+        <div
+          id="roomsSection"
+          class="Rooms justify-center"
+          style="display: none"
+        >
+          <!-- RoomSlider content goes here -->
+
+          <div class="sm:py-12 sm:px-20 relative">
+            <!-- Swiper Container -->
+            <div class="swiper-container swiper sm:p-[20px] p-5">
+              <div class="swiper-wrapper">
+                <!-- Room Slides -->
+                <div class="swiper-slide">
+                  <div class="relative w-full">
+                    <img
+                      src="Images/rooms/Cotage.webp"
+                      alt="Punarnava Cottage"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative w-full">
+                    <img
+                      src="Images/rooms/delux3.webp"
+                      alt="Punarnava Deluxe Room"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative w-full">
+                    <img
+                      src="Images/rooms/Villa.jpg"
+                      alt="Punarnava Exclusive Villas"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative w-full">
+                    <img
+                      src="Images/rooms/delux4.webp"
+                      alt="Punarnava Deluxe Room WITH BALCONY"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Room Name -->
+
+            <div class="flex justify-center items-center pr-12 gap-x-8">
+              <h2
+                class="room-name font-raleway tracking-widest text-[#7b5b20] text-sm uppercase"
+                id="room-name"
+              ></h2>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div
+              class="flex sm:justify-end justify-center sm:pt-0 pt-5 items-center pr-12 gap-x-8"
+            >
+              <button class="custom-prev-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-8 text-[#be9343] hover:text-[#987432]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button class="custom-next-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-8 text-[#be9343] hover:text-[#987432]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+            const swiper = new Swiper(".swiper-container", {
+              slidesPerView: 2, // Show 2 slides at start
+              centeredSlides: true,
+              spaceBetween: 40,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                prevEl: ".custom-prev-button",
+                nextEl: ".custom-next-button",
+              },
+              loop: true,
+              speed: 2500,
+              breakpoints: {
+                640: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+              },
+              on: {
+                slideChange: function () {
+                  const roomNames = [
+                    "Punarnava Cottage",
+                    "Punarnava Deluxe Room",
+                    "Punarnava Exclusive Villas",
+                    "Punarnava Deluxe Room WITH BALCONY",
+                  ];
+                  document.getElementById("room-name").textContent =
+                    roomNames[this.realIndex];
+                },
+              },
+            });
+          </script>
+        </div>
+        <div id="suitesSection" class="Suites" style="display: none">
+          <div class="sm:py-12 sm:px-20 relative">
+            <!-- Swiper Container -->
+            <div class="swiper-container swiper sm:p-[20px] p-5">
+              <div class="swiper-wrapper">
+                <!-- Suite Slides -->
+                <div class="swiper-slide">
+                  <div class="relative w-full">
+                    <img
+                      src="/images/suits/Studio-suiets.jpg"
+                      alt="Luxury Suite"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative w-full">
+                    <img
+                      src="/images/suits/Family-suites4.jpg"
+                      alt="Presidential Suite"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Suite Name -->
+            <div class="flex justify-center items-center pr-12 gap-x-8">
+              <h2
+                class="suite-name font-raleway tracking-widest text-[#7b5b20] text-sm uppercase"
+                id="suite-name"
+              ></h2>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div
+              class="flex sm:justify-end justify-center sm:pt-0 pt-5 items-center pr-12 gap-x-8"
+            >
+              <button class="suite-prev-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-8 text-[#be9343] hover:text-[#987432]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button class="suite-next-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-8 text-[#be9343] hover:text-[#987432]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Swiper JS -->
+          <script>
+            const suiteSwiper = new Swiper(".swiper-container", {
+              slidesPerView: 2, // Show 2 slides at start
+              centeredSlides: true,
+              spaceBetween: 40,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                prevEl: ".suite-prev-button",
+                nextEl: ".suite-next-button",
+              },
+              loop: true,
+              speed: 2500,
+              breakpoints: {
+                640: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+              },
+              on: {
+                slideChange: function () {
+                  const suiteNames = ["Studio SUITE", "Family Deluxe SUITE"];
+                  document.getElementById("suite-name").textContent =
+                    suiteNames[this.realIndex];
+                },
+              },
+            });
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex justify-center pb-12">
+        <a href="tel:+ 917217011476">
+          <button
+            class="py-2 px-6 bg-[#be9343] text-white rounded-md hover:bg-[#d5a54b] focus:outline-none focus:ring-2 focus:ring-blue-500 relative"
+          >
+            <span
+              class="absolute inset-0 rounded-full bg-[#be9343] opacity-90 border-blue-50 animate-ping"
+            ></span>
+            Call for Booking
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <div
+          class="sm:px-20 px-4 py-12 bg-opacity-80 bg-cover bg-fixed bg-center bg-no-repeat"
+          style="
+            background-image: url('Images/download.png');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div>
+            <div class="sm:flex block justify-between">
+              <!-- Dining Section Heading -->
+              <div>
+                <h2
+                  class="text-3xl font-extralight font-serif uppercase tracking-widest text-black"
+                >
+                  Dining
+                </h2>
+                <br />
+                <p class="sm:w-[450px] font-sans text-sm text-black">
+                  Here at Punarnava, we strive to give our guests the best
+                  experience in in-room dining—an experience that remains
+                  unforgettable. We believe that feasting with family, friends,
+                  and loved ones should be done properly and with the highest
+                  quality available. Guests can indulge in a symphony of tastes
+                  and flavors while taking in the amazing scenery, which makes
+                  it a perfect place for both the palate and the soul in this
+                  enchanting natural setting.
+                </p>
+              </div>
+              <!-- Dining Button -->
+              <div>
+                <a href="/dining">
+                  <button
+                    class="px-4 py-2 sm:mt-0 mt-4 border-[#be9343] text-black hover:bg-[#be9343] hover:text-white border-2 rounded-sm text-sm font-raleway tracking-widest shadow-xl cursor-pointer"
+                  >
+                    All Dining
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- Dining Slider Section -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="/js/roomslider.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/global.js"></script>
+  </body>
+</html>

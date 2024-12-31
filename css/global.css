@@ -23,11 +23,11 @@ body {
 }
 
 .sidenav ul {
-    padding-top: 5px;
+    padding-top: 20px;
 }
 
 .sidenav ul li {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .sidenav a {

@@ -1,10 +1,10 @@
 let currentIndex = 0;
 const images = [
-  '/images/home/destination-wedding-2.webp',
-  '/images/home/destination-wedding-4.webp',
-  '/images/home/destination-wedding-1.jpg',
-  '/images/home/destination-wedding-5.webp',
-  '/images/home/destination-wedding-6_1.webp'
+  '/Images/home/destination-wedding-2.webp',
+  '/Images/home/destination-wedding-4.webp',
+  '/Images/home/destination-wedding-1.jpg',
+  '/Images/home/destination-wedding-5.webp',
+  '/Images/home/destination-wedding-6_1.webp'
   // Add other image paths here
 ];
 

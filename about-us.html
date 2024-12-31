@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About- Punarnava Resort and Spa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Tailwind Configuration (if needed)
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans Display"', "sans-serif"],
+              raleway: ['"Raleway"', "sans-serif"],
+              cinzel: ['"Cinzel Decorative"', "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Cinzel+Decorative:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper Styles -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="fixed w-full z-10 transition-all duration-300 bg-[#0D0C0C] backdrop-blur-[1.4495413303375244px] bg-opacity-40"
+    >
+      <div class="px-4 sm:py-4 py-1 flex justify-between items-center">
+        <div class="flex justify-start items-center lg:ps-8 ps-1">
+          <div>
+            <a href="/">
+              <img
+                src="/Images/Logo/punarnava white.webp"
+                alt="Logo"
+                class=""
+                width="60"
+                height="40"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="/">
+              <img
+                src="/Images/Logo/punarnava white text1.webp"
+                alt="Text Logo"
+                class=""
+                width="150"
+                height="60"
+              />
+            </a>
+          </div>
+        </div>
+        <ul
+          id="desktop-menu"
+          class="lg:flex hidden font-sans font-light tracking-wide items-center gap-x-4 text-[19px] uppercase text-white"
+        >
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/destination-wedding">Destination Wedding</a></li>
+          <li><a href="/Room-suites">Room & Suites</a></li>
+          <li><a href="/contact-us">Contact Us</a></li>
+          <li><a href="https://www.swiftbook.io/inst/#home">Book Now</a></li>
+        </ul>
+        <a href="tel:+917217011476" class="hidden xl:block">
+          <button
+            class="px-4 py-2 bg-white rounded-sm text-black shadow-lg hidden xl:block cursor-pointer relative"
+          >
+            <span
+              class="absolute inset-0 rounded-full bg-[#be9343] opacity-90 border-blue-50 animate-ping"
+            ></span>
+            Call Now
+          </button>
+        </a>
+        <button id="menu-toggle" class="cursor-pointer text-white">
+          <i id="menu-icon" class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </nav>
+    <section class="sm:pt-0 pt-16">
+      <div class="bg-black overflow-hidden">
+        <img
+          alt="About us image"
+          loading="lazy"
+          class="w-full h-full object-cover"
+          src="/Images/Aboutus/about-banner4.webp"
+          layout=""
+        />
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <div
+          class="w-full justify-center sm:gap-x-20 sm:flex block items-center py-20 sm:px-0 px-4 mt-4"
+        >
+          <div>
+            <h1 class="text-normal text-[#be9343] font-cinzel uppercase">
+              <span class="text-3xl"> About Punarnava Resort & Spa</span>
+            </h1>
+            <br />
+            <p class="sm:w-[450px] font-sans">
+              Nestled in the majestic Himalayan mountains and lush Mussoorie
+              Hills, Punarnava Resort and Spa is a luxurious oasis dedicated to
+              wellness and rejuvenation. Our resort, inspired by the ancient
+              wisdom of Panchtatva and Vedic traditions, offers a serene escape
+              from the hustle and bustle of modern life, providing the perfect
+              backdrop for various memorable experiences:
+              <br />
+              <br />
+              <b>- Vedic Destination Weddings and Himalayan Celebrations </b>
+              <br />
+              <b>- Unforgettable Family Vacations and Anniversaries</b>
+              <br />
+              <b>- A Tranquil Retreat from the Chaos of City Life</b>
+              <br />
+              <br />
+              Our name, Punarnava, is derived from the revered Ayurvedic herb
+              known for its properties of inner cleansing, rejuvenation, and
+              reconnection. True to its name, our resort embodies the essence of
+              this herb, providing a sanctuary for guests to restart, relieve,
+              and recharge their lives amidst nature&apos;s splendor. Experience
+              a unique blend of luxury, tradition, and natural beauty at
+              Punarnava Resort and Spa, where every moment is crafted to offer
+              relaxation, renewal, and unforgettable experiences.
+            </p>
+          </div>
+          <div
+            class="flex justify-center sm:w-[550px] sm:h-[450px] rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              alt="About us image"
+              loading="lazy"
+              class="overflow-hidden w-full h-full object-cover"
+              src="/Images/Aboutus/about-banner4.webp"
+              layout="responsive"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="py-12 px-4">
+        <div>
+          <h2
+            class="text-center font-cinzel tracking-widest text-4xl font-extralight text-[#be9343] uppercase"
+          >
+            Our Story
+          </h2>
+        </div>
+        <div class="block justify-center text-start font-sans sm:px-52 pt-8">
+          <p id="story-content">
+            Punarnava stands as one of the best five-star resorts in Dehradun,
+            exemplifying a unique blend of Panchtatva wellness and the
+            principles of Vedic Vivah. Established in October 2018, Punarnava
+            was conceived with the vision of embracing &quot;Panch Tatwa&quot;
+            and the ideals of &quot;Rejuvenate, Refresh, and Reconnect.&quot;
+            Nestled in the Himalayas and surrounded by dense forests in the
+            Mussoorie Hills, Punarnava Resort & Spa is conveniently located just
+            10 kilometers from both Dehradun and Mussoorie, offering a perfect
+            escape from the hustle and bustle of modern life, harmoniously
+            integrated with the sacred land of Shiva.
+          </p>
+          <div id="extra-content" class="hidden">
+            <span>
+              Punarnava is the realization of Acharya Ashish Semwal&apos;s
+              vision. Acharya Ji achieved profound enlightenment at the age of
+              22 through his relentless pursuit of absolute truth. He envisioned
+              a world where people could experience joy as pure as the morning
+              birdsong, vibrancy akin to blooming flowers, and boundless freedom
+              like a bird in the sky. His deep aspiration was for people to
+              fully appreciate and embrace the beauty of life and nature with a
+              wholehearted
+              <b> “yes” </b> Driven by this vision, Acharya Ji sought out
+              tranquil and peaceful locations for meditation, guided by divine
+              grace. His spiritual journey led him to the serene village of
+              Bhtarli, nestled amidst the lush Himalayan forests near Mussoorie.
+              Here, he discovered an ideal environment to practice meditation
+              and share his vision of embracing the natural world&apos;s
+              splendor. The area&apos;s spiritual energy, calming sound of
+              flowing water, and peaceful surroundings were deeply moving.
+              Acharya Ji was also fascinated by a historic cottage and an
+              eco-friendly walking path built from local materials, designed
+              according to traditional Vastu Shastra principles. Curious about
+              the village&apos;s traditions, he inquired with the elders, who
+              informed him that a British scholar, known as “Firangi Baba,” had
+              discovered this tranquil spot in the 1940s during British rule.
+              The scholar frequented the area for spiritual healing, yoga,
+              meditation, and self-discovery. Acharya Ji’s friend, Abhijit
+              Verma, later visited him to share his dramatic life journey. After
+              earning a Master’s degree from the National University of
+              California and advancing to a high-profile, high-stress corporate
+              position, Abhijit’s health suffered due to extreme stress and
+              mental strain. He was diagnosed with severe heart disease, with
+              only 10% of his heart functioning. Fortunately, Dr. K.R.
+              Balakrishnan at Fortis Malar Hospital in Chennai performed a
+              life-saving heart transplant, which restored his health. Moved by
+              his friend&apos;s ordeal, Acharya Ji began chanting mantras and
+              praying for Abhijit. Thanks to divine grace, Abhijit recovered and
+              is now thriving. Inspired by this serene environment, Acharya Ji
+              established Punarnava Wellness, a premier health resort that
+              emphasizes the integration of mental, emotional, and physical
+              well-being for holistic health. Punarnava is truly a paradise on
+              earth, situated in the sacred land of Shiva. In alignment with its
+              foundational principles, Punarnava is committed to connecting with
+              the traditions of &quot;Vedic Vivah&quot; and the &quot;Panch
+              Tatva&quot; (Five Elements). To embody these values, a temple
+              named Purnishwar Temple has been constructed, serving as a
+              spiritual anchor for the community and reinforcing the
+              resort&apos;s dedication to holistic well-being.
+            </span>
+          </div>
+        </div>
+        <div class="flex justify-center pt-4">
+          <button
+            id="toggle-button"
+            class="font-sans px-4 py-2 border-2 border-[#be9343] text-[#be9343]"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="flex justify-center py-8">
+          <div
+            class="sm:w-[750px] sm:h-96 overflow-hidden rounded-lg shadow-lg"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="/Images/Aboutus/story3-1.webp"
+              alt="Punarnava story"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggleButton = document.getElementById("toggle-button");
+      const extraContent = document.getElementById("extra-content");
+      const storyContent = document.getElementById("story-content");
+
+      toggleButton.addEventListener("click", () => {
+        if (extraContent.classList.contains("hidden")) {
+          extraContent.classList.remove("hidden");
+          toggleButton.textContent = "Read less";
+        } else {
+          extraContent.classList.add("hidden");
+          toggleButton.textContent = "Read more";
+        }
+      });
+    </script>
+
+    <section>
+      <div class="pb-12 px-4">
+        <div class="flex justify-center">
+          <h2
+            class="text-center font-cinzel tracking-widest text-2xl text-[#be9343] font-thin py-8"
+          >
+            MEETINGS & WEDDINGS
+          </h2>
+        </div>
+        <div class="sm:flex justify-center sm:gap-x-12 items-center mt-4">
+          <div
+            class="sm:w-[450px] sm:h-96 overflow-hidden flex justify-center rounded-lg shadow-xl"
+          >
+            <img
+              class="w-full h-full object-contain sm:object-cover"
+              src="/Images/Aboutus/destination-wedding-1.webp"
+              loading="lazy"
+              alt="Meeting"
+            />
+          </div>
+          <div>
+            <h2 class="text-[#be9343] font-cinzel tracking-widest py-2 text-lg">
+              Weddings & Celebration
+            </h2>
+            <p class="sm:w-96 text-sm font-sans">
+              Immerse yourself in the divine beauty of a Vedic Wedding at
+              Punarnava, nestled in the majestic embrace of the Himalayas. Our
+              enchanting resort is a premier destination for weddings and
+              honeymoons, situated near the revered Triyuginarayan temple, a
+              sacred symbol of Lord Shiva and Parvati&apos;s eternal union. With
+              breathtaking vistas of the lush forest, majestic Himalayas, George
+              Everest, Hathi Paw, and the rolling Mussoorie hills, our expansive
+              and versatile spaces offer an unforgettable setting for every
+              momentous occasion. Let the sanctity of nature and the bliss of
+              love converge at Punarnava, crafting an unforgettable experience
+              for you and your beloved.
+            </p>
+            <div class="flex">
+              <div
+                class="flex items-center gap-x-1 mt-6 text-sm hover:text-[#84662e] font-cinzel tracking-widest text-[#be9343]"
+              >
+                <a href="destination-wedding">View Details </a>
+                <MdArrowRightAlt class="size-6" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm:flex justify-center sm:gap-x-12 items-center mt-4 pt-20">
+          <div>
+            <h2 class="text-[#be9343] font-cinzel tracking-widest py-2 text-lg">
+              Meetings & Events
+            </h2>
+            <p class="sm:w-96 text-sm font-sans">
+              Boost your corporate meetings for more productivity amid the
+              tranquility of The Himalayas at Punarnava Resort & Spa. Punarnava
+              Resort & Spa offers you their wonderful conference hall,
+              &quot;Manan Conference Hall.&quot; The conference hall provides
+              the corporates with the best environment for strategic business
+              meetings and planning sessions. And explore 132 acres of stunning
+              landscapes with our team-building adventures, where every activity
+              is designed to boost morale and forge stronger bonds.
+            </p>
+            <div class="flex">
+              <div
+                class="flex items-center gap-x-1 mt-6 mb-2 sm:mb-0 text-sm hover:text-[#84662e] font-cinzel tracking-widest text-[#be9343]"
+              >
+                <a href="/meeting-and-events">View Details </a>
+                <MdArrowRightAlt class="size-6" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="sm:w-[450px] sm:h-96 overflow-hidden flex justify-center rounded-lg shadow-xl"
+          >
+            <img
+              class="w-full h-full object-contain sm:object-cover"
+              src="/Images/Aboutus/meetandevent.webp"
+              loading="lazy"
+              alt="Meeting"
+              layout=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="sidenav" class="sidenav h-full block z-20">
+      <div
+        class="block justify-center h-full bg-[#0D0C0C] backdrop-blur-[1.4495413303375244px] bg-opacity-40"
+      >
+        <div class="flex justify-end pt-8 pr-4">
+          <button id="close-sidenav" class="cursor-pointer text-white">
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+
+        <ul class="pt-2 text-start ps-12">
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/">Home</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/about-us">About Punarnava</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/destination-wedding">Destination Wedding</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/meeting-and-events">Meeting and Events</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/Room-suites">Room & Suites</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/wellness-and-spa">Wellness and Spa</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/managing-director">Managing Director</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/activities">Activities</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/facilities">Facilities</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/dining">Dining</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/contact-us">Contact Us</a>
+          </li>
+          <li
+            class="font-sans mt-1 text-white text-xl font-thin hover:text-[#be9343]"
+          >
+            <a href="/gallery">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="/js/roomslider.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/global.js"></script>
+  </body>
+</html>

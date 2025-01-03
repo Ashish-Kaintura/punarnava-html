@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unique Activities and Experiences |Punarnava Resort & Spa</title>
+    <title>Punarnava Resort and Spa | Our Facilities</title>
     <meta
       name="description"
-      content="Punarnava resort and spa- our activities Trekking, Yoga Meditation, Plantations & many more."
+      content="Resort in Uttarakhand | India | Punarnava Resort and spa"
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -179,289 +179,319 @@
         </ul>
       </div>
     </div>
-
     <!-- Banner Section -->
-    <section>
-      <div class="flex justify-center overflow-hidden relative pt-16">
+    <section class="relative">
+      <div class="flex justify-center overflow-hidden">
         <img
-          class="w-full h-full object-cover"
-          src="/Images/Activity/Activity%20banner.webp"
+          class="w-full h-auto object-cover"
+          src="/Images/facilites/Facility.webp"
           alt="destination wedding"
         />
       </div>
     </section>
 
-    <!-- Activities Section -->
-    <section class="pb-12 px-4">
-      <div class="flex justify-center">
-        <h1
-          class="text-center font-sans tracking-widest text-2xl text-[#be9343] py-8 uppercase"
-        >
-          Activities We Provide
-        </h1>
-      </div>
+    <!-- Facilities Title -->
+    <section class="py-12 text-center">
+      <h1 class="text-2xl font-thin font-serif uppercase tracking-widest text-[#be9343]">
+        Facilities We Provide
+      </h1>
     </section>
 
-    <section>
+    <!-- Facilities Grid -->
+    <section
+      class="grid grid-cols-1 lg:grid-cols-2 justify-items-center py-12 gap-12 lg:mx-8 px-4"
+    >
+      <!-- Facility Cards -->
       <div
-        class="grid grid-cols-1 lg:grid-cols-2 justify-items-center py-12 gap-12 lg:mx-8 px-4"
+        class="facility-card sm:w-[450px] border-2 shadow-lg rounded-lg"
+        data-index="0"
       >
-        <div
-          class="activity-card sm:w-[450px] m-1 rounded-t-lg border-2 shadow-lg"
-        >
-          <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
-            <img
-              class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-all ease-in duration-100"
-              src="/Images/Activity/tracking.webp"
-              alt="Trekking"
-            />
-          </div>
-          <div class="p-4">
-            <h2
-              class="text-[#be9343]  tracking-widest py-2 text-lg font-serif"
+        <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
+          <img
+            class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-transform duration-100"
+            src="/Images/facilites/gym1.webp"
+            alt="Outdoor Gym"
+          />
+        </div>
+        <div class="p-4">
+          <h2 class="text-lg text-[#be9343] font-serif tracking-widest py-2">
+            Outdoor Gym
+          </h2>
+          <p class="text-xs font-semibold line-clamp-6">
+            Energise your body and mind in our state-of-the-art outdoor gym, set
+            against the backdrop of the Mussoorie Himalayas. This feature
+            provides guests with the opportunity to workout with actual fresh
+            mountain air to breathe making Punarnava one of the wonderful
+            Dehradun-based hotels for those interested in their health.
+          </p>
+          <div
+            class="flex items-center text-sm text-[#be9343] hover:text-[#84662e]"
+          >
+            <button
+              class="mt-4 py-2 text-sm text-[#be9343] font-serif tracking-widest hover:text-[#84662e]"
+              onclick="openModal(0)"
             >
-              Trekking
-            </h2>
-            <p class="sm:w-96 text-xs font-medium line-clamp-6">
-              Punarnava Resort & Spa offers guests an invigorating trekking
-              adventure into the dense forest of Dehradun, which offers a
-              panoramic view of Mussoorie and Himalaya. Punarnava offers a
-              guided trek that caters to every level of skill, which makes it an
-              ideal way to explore the natural beauty of Uttarakhand.
-            </p>
-            <div class="flex gap-x-4 items-center">
-              <button
-                class="info-btn flex items-center gap-x-1 mt-6 text-sm hover:text-[#84662e] font-semibold tracking-widest text-[#be9343]"
-              >
-                <span>Get Info</span>
-                <svg
-                  class="w-5 h-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M13.828 11H3a1 1 0 000 2h10.828l-3.95 3.95a1 1 0 101.414 1.414l5.657-5.657a1 1 0 000-1.414l-5.657-5.657a1 1 0 10-1.414 1.414L13.828 11z"
-                  />
-                </svg>
-              </button>
-            </div>
+              Get Info
+            </button>
+            <i class="fa-solid fa-arrow-right mt-5 ps-2"></i>
           </div>
         </div>
-        <!-- Repeat the above block for each activity -->
-        <div
-          class="activity-card sm:w-[450px] m-1 rounded-t-lg border-2 shadow-lg"
-        >
-          <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
-            <img
-              class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-all ease-in duration-100"
-              src="/Images/Activity/mandir.webp"
-              alt="Trekking"
-            />
-          </div>
-          <div class="p-4">
-            <h2
-              class="text-[#be9343]  tracking-widest py-2 text-lg font-serif"
-            >
-              Naag Mandir Visit
-            </h2>
-            <p class="sm:w-96 text-xs font-medium line-clamp-6">
-              Punarnava provides visits to various places in Dehradun; Naag
-              Devta Mandir is also one such place. The temple is around 500
-              years old, considered Siddhi Peeth, and has a huge gathering every
-              year.
-            </p>
-            <div class="flex gap-x-4 items-center">
-              <button
-                class="info-btn flex items-center gap-x-1 mt-6 text-sm hover:text-[#84662e] font-semibold tracking-widest text-[#be9343]"
-              >
-                <span>Get Info</span>
-                <svg
-                  class="w-5 h-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M13.828 11H3a1 1 0 000 2h10.828l-3.95 3.95a1 1 0 101.414 1.414l5.657-5.657a1 1 0 000-1.414l-5.657-5.657a1 1 0 10-1.414 1.414L13.828 11z"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
+      </div>
 
-        <div
-          class="activity-card sm:w-[450px] m-1 rounded-t-lg border-2 shadow-lg"
-        >
-          <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
-            <img
-              class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-all ease-in duration-100"
-              src="/Images/Activity/Yoga meditation.webp"
-              alt="Trekking"
-            />
-          </div>
-          <div class="p-4">
-            <h2
-              class="text-[#be9343]  tracking-widest py-2 text-lg font-serif"
+      <div
+        class="facility-card sm:w-[450px] border-2 shadow-lg rounded-lg"
+        data-index="0"
+      >
+        <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
+          <img
+            class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-transform duration-100"
+            src="/Images/facilites/library.webp"
+            alt="Library (Gyan)"
+          />
+        </div>
+        <div class="p-4">
+          <h2 class="text-lg text-[#be9343] font-serif tracking-widest py-2">
+            Library (Gyan)
+          </h2>
+          <p class="text-xs font-semibold line-clamp-6">
+            Try to spend more time in our spacious library, Gyan, designed as a
+            calm place for readers. This area looks like an intellectual appeal
+            of Indian luxurious hotels with a collection of literature based on
+            local and health topics. The emanating serenity makes it an
+            appropriate place to engage in meditation or else do some personal
+            business best suited for individuals attending business sessions or
+            corporate events at our resort.
+          </p>
+          <div
+            class="flex items-center text-sm text-[#be9343] hover:text-[#84662e]"
+          >
+            <button
+              class="mt-4 py-2 text-sm text-[#be9343] font-serif tracking-widest hover:text-[#84662e]"
+              onclick="openModal(1)"
             >
-              Yoga Meditation
-            </h2>
-            <p class="sm:w-96 text-xs font-medium line-clamp-6">
-              Punarnava Resort & Spa offers a very placid yoga facility. The
-              yoga sessions are specially tailored to fulfill all levels,
-              providing a peaceful escape and promoting overall well-being. With
-              stunning views of the Mussoorie Himalaya, the experience is both
-              refreshing and spiritually enriching.
-            </p>
-            <div class="flex gap-x-4 items-center">
-              <button
-                class="info-btn flex items-center gap-x-1 mt-6 text-sm hover:text-[#84662e] font-semibold tracking-widest text-[#be9343]"
-              >
-                <span>Get Info</span>
-                <svg
-                  class="w-5 h-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M13.828 11H3a1 1 0 000 2h10.828l-3.95 3.95a1 1 0 101.414 1.414l5.657-5.657a1 1 0 000-1.414l-5.657-5.657a1 1 0 10-1.414 1.414L13.828 11z"
-                  />
-                </svg>
-              </button>
-            </div>
+              Get Info
+            </button>
+            <i class="fa-solid fa-arrow-right mt-5 ps-2"></i>
           </div>
         </div>
+      </div>
 
-        <div
-          class="activity-card sm:w-[450px] m-1 rounded-t-lg border-2 shadow-lg"
-        >
-          <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
-            <img
-              class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-all ease-in duration-100"
-              src="/Images/Activity/waterfall.webp"
-              alt="Trekking"
-            />
-          </div>
-          <div class="p-4">
-            <h2
-              class="text-[#be9343]  tracking-widest py-2 text-lg font-serif"
+      <div
+        class="facility-card sm:w-[450px] border-2 shadow-lg rounded-lg"
+        data-index="0"
+      >
+        <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
+          <img
+            class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-transform duration-100"
+            src="/Images/facilites/kaya Kumbh.webp"
+            alt="Kaya and Kumbh"
+          />
+        </div>
+        <div class="p-4">
+          <h2 class="text-lg text-[#be9343] font-serif tracking-widest py-2">
+            Kaya and Kumbh
+          </h2>
+          <p class="text-xs font-semibold line-clamp-6">
+            Unwind and pamper yourself at our full service Kaya and Kumbh
+            Ayurvedic spa. This particular feature makes us among the leading
+            hotels in Dehradun as it provides its visitors with varied Ayurvedic
+            treatments and resort spa services. The highly professional and
+            caring masseuses and the individual approach make the spa one of the
+            most popular in Dehradun and a major weekend destination from Delhi.
+          </p>
+          <div
+            class="flex items-center text-sm text-[#be9343] hover:text-[#84662e]"
+          >
+            <button
+              class="mt-4 py-2 text-sm text-[#be9343] font-serif tracking-widest hover:text-[#84662e]"
+              onclick="openModal(2)"
             >
-              River Waterfall Visit
-            </h2>
-            <p class="sm:w-96 text-xs font-medium line-clamp-6">
-              Punarnava Resort & Spa offers a refreshing activity experience
-              with easy access to nearby rivers and serene waterfalls. Guests
-              can enjoy calm nature walks along the riverbanks, followed by a
-              soothing dip in the incredible, cascading waterfalls. This perfect
-              blend of relaxation and adventure enhances the resort's charm and
-              makes it an ideal weekend getaway in Uttarakhand.
-            </p>
-            <div class="flex gap-x-4 items-center">
-              <button
-                class="info-btn flex items-center gap-x-1 mt-6 text-sm hover:text-[#84662e] font-semibold tracking-widest text-[#be9343]"
-              >
-                <span>Get Info</span>
-                <svg
-                  class="w-5 h-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M13.828 11H3a1 1 0 000 2h10.828l-3.95 3.95a1 1 0 101.414 1.414l5.657-5.657a1 1 0 000-1.414l-5.657-5.657a1 1 0 10-1.414 1.414L13.828 11z"
-                  />
-                </svg>
-              </button>
-            </div>
+              Get Info
+            </button>
+            <i class="fa-solid fa-arrow-right mt-5 ps-2"></i>
           </div>
         </div>
+      </div>
 
-        <div
-          class="activity-card sm:w-[450px] m-1 rounded-t-lg border-2 shadow-lg"
-        >
-          <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
-            <img
-              class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-all ease-in duration-100"
-              src="/Images/Activity/plant.webp"
-              alt="Trekking"
-            />
-          </div>
-          <div class="p-4">
-            <h2
-              class="text-[#be9343]  tracking-widest py-2 text-lg font-serif"
+      <div
+        class="facility-card sm:w-[450px] border-2 shadow-lg rounded-lg"
+        data-index="0"
+      >
+        <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
+          <img
+            class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-transform duration-100"
+            src="/Images/facilites/Pool side  ( facility).webp"
+            alt="Pool Side Lunch And Breakfast"
+          />
+        </div>
+        <div class="p-4">
+          <h2 class="text-lg text-[#be9343] font-serif tracking-widest py-2">
+            Pool Side Lunch And Breakfast
+          </h2>
+          <p class="text-xs font-semibold line-clamp-6">
+            Enjoy our outdoor restaurant dining with a breathtaking view of the
+            scenic hills of Uttarakhand. Here is how luxury can be defined: an
+            exquisite collection of food and exquisite surroundings, making
+            Punarnava one of the greatest Indian resorts. This makes it suitable
+            for holiday makers as well as guests in search of a great hotel
+            experience in Dehradun.
+          </p>
+          <div
+            class="flex items-center text-sm text-[#be9343] hover:text-[#84662e]"
+          >
+            <button
+              class="mt-4 py-2 text-sm text-[#be9343] font-serif tracking-widest hover:text-[#84662e]"
+              onclick="openModal(3)"
             >
-              Plantations
-            </h2>
-            <p class="sm:w-96 text-xs font-medium line-clamp-6">
-              Punarnava Resort & Spa is considered one of the best five resorts
-              in Dehradun, a green and dense sanctuary. The resort's commitment
-              to preserving the environment is evident in the carefully selected
-              flora that creates a serene and refreshing atmosphere, making it a
-              paradise for nature lovers.
-            </p>
-            <div class="flex gap-x-4 items-center">
-              <button
-                class="info-btn flex items-center gap-x-1 mt-6 text-sm hover:text-[#84662e] font-semibold tracking-widest text-[#be9343]"
-              >
-                <span>Get Info</span>
-                <svg
-                  class="w-5 h-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M13.828 11H3a1 1 0 000 2h10.828l-3.95 3.95a1 1 0 101.414 1.414l5.657-5.657a1 1 0 000-1.414l-5.657-5.657a1 1 0 10-1.414 1.414L13.828 11z"
-                  />
-                </svg>
-              </button>
-            </div>
+              Get Info
+            </button>
+            <i class="fa-solid fa-arrow-right mt-5 ps-2"></i>
           </div>
         </div>
+      </div>
 
-        <div
-          class="activity-card sm:w-[450px] m-1 rounded-t-lg border-2 shadow-lg"
-        >
-          <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
-            <img
-              class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-all ease-in duration-100"
-              src="/Images/Activity/naturewalk.webp"
-              alt="Trekking"
-            />
-          </div>
-          <div class="p-4">
-            <h2
-              class="text-[#be9343]  tracking-widest py-2 text-lg font-serif"
+      <div
+        class="facility-card sm:w-[450px] border-2 shadow-lg rounded-lg"
+        data-index="0"
+      >
+        <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
+          <img
+            class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-transform duration-100"
+            src="/Images/facilites/BBQ.webp"
+            alt="Barbeque"
+          />
+        </div>
+        <div class="p-4">
+          <h2 class="text-lg text-[#be9343] font-serif tracking-widest py-2">
+            Barbeque
+          </h2>
+          <p class="text-xs font-semibold line-clamp-6">
+            Take a look at barbeque spawn our barbeque nights, which are among
+            the most popular options provided at our resort in Dehradun. Staged
+            underneath the sky of the Himalayas, these events provide the best
+            combination of great food and atmosphere, thus making us one of the
+            most sought after hotels in Dehradun near railway station with great
+            dining options
+          </p>
+          <div
+            class="flex items-center text-sm text-[#be9343] hover:text-[#84662e]"
+          >
+            <button
+              class="mt-4 py-2 text-sm text-[#be9343] font-serif tracking-widest hover:text-[#84662e]"
+              onclick="openModal(4)"
             >
-              Nature Walk
-            </h2>
-            <p class="sm:w-96 text-xs font-medium line-clamp-6">
-              At Punarnava Resort & Spa, the nature walk is a stimulating
-              activity that immerses guests in the peaceful beauty of dense
-              forests. Guided by local experts, the walk offers an opportunity
-              to explore the rich flora and fauna. It's a perfect way to
-              reconnect with the environment and experience the tranquility of
-              the Himalayan foothills.
-            </p>
-            <div class="flex gap-x-4 items-center">
-              <button
-                class="info-btn flex items-center gap-x-1 mt-6 text-sm hover:text-[#84662e] font-semibold tracking-widest text-[#be9343]"
-              >
-                <span>Get Info</span>
-                <svg
-                  class="w-5 h-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M13.828 11H3a1 1 0 000 2h10.828l-3.95 3.95a1 1 0 101.414 1.414l5.657-5.657a1 1 0 000-1.414l-5.657-5.657a1 1 0 10-1.414 1.414L13.828 11z"
-                  />
-                </svg>
-              </button>
-            </div>
+              Get Info
+            </button>
+            <i class="fa-solid fa-arrow-right mt-5 ps-2"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="facility-card sm:w-[450px] border-2 shadow-lg rounded-lg"
+        data-index="0"
+      >
+        <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
+          <img
+            class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-transform duration-100"
+            src="/Images/facilites/Game.webp"
+            alt="Game Zone"
+          />
+        </div>
+        <div class="p-4">
+          <h2 class="text-lg text-[#be9343] font-serif tracking-widest py-2">
+            Game Zone
+          </h2>
+          <p class="text-xs font-semibold line-clamp-6">
+            Get to release your energy and have some amusement in our
+            equipment-packed game corner, which includes a number of indoor
+            games. This facility makes Punarnava an ideal destination for family
+            holidays as well as team building weekend getaways to stand us out
+            amongst other hotels in Dehradun India. It's a great space for
+            relaxation after exploring nearby weekend getaways from Delhi.
+          </p>
+          <div
+            class="flex items-center text-sm text-[#be9343] hover:text-[#84662e]"
+          >
+            <button
+              class="mt-4 py-2 text-sm text-[#be9343] font-serif tracking-widest hover:text-[#84662e]"
+              onclick="openModal(5)"
+            >
+              Get Info
+            </button>
+            <i class="fa-solid fa-arrow-right mt-5 ps-2"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="facility-card sm:w-[450px] border-2 shadow-lg rounded-lg"
+        data-index="0"
+      >
+        <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
+          <img
+            class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-transform duration-100"
+            src="/Images/facilites/candle night dinner.webp"
+            alt="Candlelight Dinner"
+          />
+        </div>
+        <div class="p-4">
+          <h2 class="text-lg text-[#be9343] font-serif tracking-widest py-2">
+            Candlelight Dinner
+          </h2>
+          <p class="text-xs font-semibold line-clamp-6">
+            Romance meets luxury in our candlelight dinner experiences, perfect
+            for couples and honeymooners. With such exquisite settings to offer,
+            it is no wonder that many opt for weddings , honeymoon and romantic
+            weekends at a 5 star Dehradun hotel.
+          </p>
+          <div
+            class="flex items-center text-sm text-[#be9343] hover:text-[#84662e]"
+          >
+            <button
+              class="mt-4 py-2 text-sm text-[#be9343] font-serif tracking-widest hover:text-[#84662e]"
+              onclick="openModal(6)"
+            >
+              Get Info
+            </button>
+            <i class="fa-solid fa-arrow-right mt-5 ps-2"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="facility-card sm:w-[450px] border-2 shadow-lg rounded-lg"
+        data-index="0"
+      >
+        <div class="overflow-hidden sm:h-72 flex justify-center rounded-t-lg">
+          <img
+            class="w-full h-full object-contain sm:object-cover hover:scale-125 transition-transform duration-100"
+            src="/Images/facilites/restro.webp"
+            alt="Santushti-Pure Veg Restaurant"
+          />
+        </div>
+        <div class="p-4">
+          <h2 class="text-lg text-[#be9343] font-serif tracking-widest py-2">
+            Santushti-Pure Veg Restaurant
+          </h2>
+          <p class="text-xs font-semibold line-clamp-6">
+            Savour vegetarian dishes at Santushti, our speciality restaurant
+            that showcases traditional Indian and International dishes. Food
+            being fresh and sourced within the vicinity, Santushti reflects our
+            principle of sustainable luxury. Hence, Punarnava is among the best
+            hotels in Dehradun for those preferring vegetarian food and who are
+            looking forward to staying at a luxurious resort.
+          </p>
+          <div
+            class="flex items-center text-sm text-[#be9343] hover:text-[#84662e]"
+          >
+            <button
+              class="mt-4 py-2 text-sm text-[#be9343] font-serif tracking-widest hover:text-[#84662e]"
+              onclick="openModal(7)"
+            >
+              Get Info
+            </button>
+            <i class="fa-solid fa-arrow-right mt-5 ps-2"></i>
           </div>
         </div>
       </div>
@@ -470,17 +500,14 @@
     <!-- Modal -->
     <div
       id="modal"
-      class="hidden fixed inset-0 bg-black/30 flex items-center justify-center p-4"
+      class="fixed inset-0 bg-black/30 hidden items-center justify-center p-4"
     >
-      <div class="bg-white max-w-sm rounded p-4">
-        <div class="flex justify-center">
-          <img id="modal-image" class="rounded-t-lg" src="" alt="" />
+      <div class="bg-white p-6 rounded-lg max-w-sm">
+        <div class="modal-image flex justify-center">
+          <img class="rounded-t-lg" src="" alt="" />
         </div>
-        <h2
-          id="modal-title"
-          class="text-lg font-semibold text-[#be9343] mt-4"
-        ></h2>
-        <p id="modal-description" class="mt-2 text-sm"></p>
+        <h2 class="modal-title text-lg text-[#be9343] font-semibold mt-4"></h2>
+        <p class="modal-description mt-2 text-sm"></p>
         <button
           class="mt-4 px-4 py-2 bg-[#be9343] text-white rounded"
           onclick="closeModal()"
@@ -491,27 +518,89 @@
     </div>
 
     <script>
-      const modal = document.getElementById("modal");
-      const modalImage = document.getElementById("modal-image");
-      const modalTitle = document.getElementById("modal-title");
-      const modalDescription = document.getElementById("modal-description");
+      const venues = [
+        {
+          name: "Outdoor Gym",
+          description: `Energise your body and mind in our state-of-the-art outdoor gym, set against the backdrop of the Mussoorie Himalayas. This feature provides guests with the opportunity to workout with actual fresh mountain air to breathe making Punarnava one of the wonderful Dehradun-based hotels for those interested in their health.`,
+          image: "/Images/facilites/gym1.webp",
+          imageAlt: "Outdoor Gym",
+        },
+        // Add more venue data here...
+        {
+          name: "Library (Gyan)",
+          description: ` Try to spend more time in our spacious library, Gyan, designed as a calm place for readers. This area looks like an intellectual appeal of Indian luxurious hotels with a collection of literature based on local and health topics. The emanating serenity makes it an appropriate place to engage in meditation or else do some personal business best suited for individuals attending business sessions or corporate events at our resort.
 
-      document.querySelectorAll(".info-btn").forEach((button, index) => {
-        button.addEventListener("click", () => {
-          const card = button.closest(".activity-card");
-          const image = card.querySelector("img").src;
-          const title = card.querySelector("h2").innerText;
-          const description = card.querySelector("p").innerText;
+`,
+          image: "/Images/facilites/library.webp",
+          imageAlt: "Library (Gyan)",
+        },
+        {
+          name: "Kaya and Kumbh",
+          description: `Unwind and pamper yourself at our full service Kaya and Kumbh Ayurvedic spa. This particular feature makes us among the leading hotels in Dehradun as it provides its visitors with varied Ayurvedic treatments and resort spa services. The highly professional and caring masseuses and the individual approach make the spa one of the most popular in Dehradun and a major weekend destination from Delhi.
+`,
+          image: "/Images/facilites/kaya Kumbh.webp",
+          imageAlt: "Kaya and Kumbh",
+        },
+        {
+          name: "Pool Side Lunch And Breakfast ",
+          description: `Enjoy our outdoor restaurant dining with a breathtaking view of the scenic hills of Uttarakhand. Here is how luxury can be defined: an exquisite collection of food and exquisite surroundings, making Punarnava one of the greatest Indian resorts. This makes it suitable for holiday makers as well as guests in search of a great hotel experience in Dehradun.
 
-          modalImage.src = image;
-          modalTitle.innerText = title;
-          modalDescription.innerText = description;
+`,
+          image: "/Images/facilites/Pool side  ( facility).webp",
+          imageAlt: "Pool Side Lunch And Breakfast ",
+        },
+        {
+          name: "Barbeque",
+          description: ` Take a look at barbeque spawn our barbeque nights, which are among the most popular options provided at our resort in Dehradun. Staged underneath the sky of the Himalayas, these events provide the best combination of great food and atmosphere, thus making us one of the most sought after hotels in Dehradun near railway station with great dining options.
 
-          modal.classList.remove("hidden");
-        });
-      });
+`,
+          image: "/Images/facilites/BBQ.webp",
+          imageAlt: "Barbeque",
+        },
+        {
+          name: "Game Zone",
+          description: `Get to release your energy and have some amusement in our equipment-packed game corner, which includes a number of indoor games. This facility makes Punarnava an ideal destination for family holidays as well as team building weekend getaways to stand us out amongst other hotels in Dehradun India. It's a great space for relaxation after exploring nearby weekend getaways from Delhi.
+
+`,
+          image: "/Images/facilites/Game.webp",
+          imageAlt: "Game Zone",
+        },
+
+        {
+          name: "Candlelight Dinner",
+          description: `Romance meets luxury in our candlelight dinner experiences, perfect for couples and honeymooners. With such exquisite settings to offer, it is no wonder that many opt for weddings , honeymoon and romantic weekends at a 5 star Dehradun hotel.
+
+`,
+          image: "/Images/facilites/candle night dinner.webp",
+          imageAlt: "Candlelight Dinner",
+        },
+        {
+          name: "Santushti-Pure Veg Restaurant",
+          description: `Savour vegetarian dishes at Santushti, our speciality restaurant that showcases traditional Indian and International dishes. Food being fresh and sourced within the vicinity, Santushti reflects our principle of sustainable luxury. Hence, Punarnava is among the best hotels in Dehradun for those preferring vegetarian food and who are looking forward to staying at a luxurious resort.
+
+`,
+          image: "/Images/facilites/restro.webp",
+          imageAlt: "Santushti-Pure Veg Restaurant",
+        },
+      ];
+
+      function openModal(index) {
+        const modal = document.getElementById("modal");
+        const venue = venues[index];
+
+        modal.querySelector(".modal-image img").src = venue.image;
+        modal.querySelector(".modal-image img").alt = venue.imageAlt;
+        modal.querySelector(".modal-title").textContent = venue.name;
+        modal.querySelector(".modal-description").textContent =
+          venue.description;
+
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      }
 
       function closeModal() {
+        const modal = document.getElementById("modal");
+        modal.classList.remove("flex");
         modal.classList.add("hidden");
       }
     </script>
@@ -789,6 +878,7 @@
         </a>
       </h2>
     </footer>
+
     <script src="/js/roomslider.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/global.js"></script>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/fav/favicon.ico" />
     <title>Best 5 Star Hotel in Dehradun | Punarnava Resort & Spa</title>
     <meta
       name="description"
@@ -179,15 +180,153 @@
         </ul>
       </div>
     </div>
-    <video autoplay loop muted playsinline class="w-full h-full object-cover">
-      <source src="/videos/Home Page Video.mp4" type="video/mp4" />
-      <track
-        src="/videos/Home Page Video.mp4"
-        kind="subtitles"
-        srclang="en"
-        label="English"
-      />
-    </video>
+    <div class="relative h-[750px] overflow-hidden relative">
+      <video autoplay loop muted playsinline class="w-full h-full object-cover">
+        <source src="/videos/Home Page Video.mp4" type="video/mp4" />
+        <track
+          src="/videos/Home Page Video.mp4"
+          kind="subtitles"
+          srclang="en"
+          label="English"
+        />
+      </video>
+      <section class="absolute inset-0 flex justify-center items-center">
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+
+            const openPopupButton = document.getElementById("openPopupButton");
+            const popupOverlay = document.getElementById("popupOverlay");
+            const closePopupButton =
+              document.getElementById("closePopupButton");
+            const bookingForm = document.getElementById("bookingForm");
+            const statusMessage = document.getElementById("statusMessage");
+
+            // Open the pop-up
+            openPopupButton.addEventListener("click", () => {
+              popupOverlay.classList.remove("hidden");
+            });
+
+            // Close the pop-up
+            closePopupButton.addEventListener("click", () => {
+              popupOverlay.classList.add("hidden");
+            });
+
+            // Handle form submission
+            bookingForm.addEventListener("submit", async (e) => {
+              e.preventDefault();
+              statusMessage.textContent = "Sending...";
+
+              const formData = {
+                name: bookingForm.name.value,
+                email: bookingForm.email.value,
+                phone: bookingForm.phone.value,
+              };
+
+              try {
+                const result = await emailjs.send(
+                  "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
+                  "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+                  formData
+                );
+                statusMessage.textContent = "Email sent successfully!";
+                console.log("Email sent successfully:", result.text);
+                popupOverlay.classList.add("hidden");
+              } catch (error) {
+                statusMessage.textContent = "Failed to send email.";
+                console.error("Email sending failed:", error);
+              }
+            });
+          });
+        </script>
+        <!-- Button to open the pop-up -->
+        <button
+          id="openPopupButton"
+          class="relative px-6 py-3 bg-[#be9343] text-white rounded-md hover:bg-[#b1883a]"
+        >
+          <span
+            class="absolute inset-0 rounded-full bg-[#be9343] opacity-90 border-blue-50 animate-ping"
+          ></span>
+          Get A Best Deal
+        </button>
+
+        <!-- Pop-up form -->
+        <div
+          id="popupOverlay"
+          class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-20 hidden"
+        >
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg space-y-6"
+          >
+            <div class="flex justify-end">
+              <button
+                id="closePopupButton"
+                type="button"
+                class="px-6 py-3 bg-red-600 text-white rounded-md hover:bg-red-700"
+              >
+                Close
+              </button>
+            </div>
+
+            <h2
+              class="text-3xl font-bold text-center text-gray-800 font-serif"
+            >
+              Hotel Booking
+            </h2>
+
+            <!-- Booking form -->
+            <form id="bookingForm" class="space-y-5">
+              <div class="sm:flex sm:gap-x-4">
+                <div class="space-y-2">
+                  <label for="name" class="text-lg text-gray-700">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                    class="w-full p-4 bg-gray-100 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label for="email" class="text-lg text-gray-700">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                    class="w-full p-4 bg-gray-100 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+              </div>
+              <div class="sm:flex sm:gap-x-4">
+                <div class="space-y-2">
+                  <label for="phone" class="text-lg text-gray-700"
+                    >Number</label
+                  >
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="Enter your phone number"
+                    required
+                    class="w-full p-4 bg-gray-100 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="w-full py-3 bg-[#be9343] text-white rounded-md hover:bg-[#d5a54b] focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                Submit
+              </button>
+              <p id="statusMessage" class="text-center text-gray-700 mt-4"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
     <div id="quickbook-widget" class="pt-8"></div>
 
     <script
